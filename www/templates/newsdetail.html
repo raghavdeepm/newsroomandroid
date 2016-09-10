@@ -1,0 +1,34 @@
+<ion-view view-title="{{newsType}}" ng-controller="NewsDetailCtrl">
+  <ion-nav-buttons side="left"></ion-nav-buttons>
+  <ion-nav-buttons side="right" ng-click="shareWith('{{news.title_plain}}', '{{news.url}}')" >
+    <img src="img/share.png" class="shareImg" />
+  </ion-nav-buttons>
+  <ion-content>
+    <ion-list>
+      <ion-item class="newsListItem">
+        <img ng-if="news.config.length == 0" src="{{news.attachments[0].images.full.url}}" />
+        <videogular ng-if="news.config.length != 0" class="videogular-container">
+          <vg-media vg-src="news.config.sources">
+          </vg-media>
+
+          <vg-controls>
+            <vg-play-pause-button></vg-play-pause-button>
+            <vg-scrub-bar>
+              <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+            </vg-scrub-bar>
+            <vg-volume>
+              <vg-mute-button></vg-mute-button>
+              <vg-volume-bar></vg-volume-bar>
+            </vg-volume>
+            <vg-fullscreen-button></vg-fullscreen-button>
+          </vg-controls>
+
+          <vg-overlay-play></vg-overlay-play>
+        </videogular>
+        <h2 ng-bind-html="news.title"></h2>
+        <h3>By {{news.author.name}}</h3>
+        <div ng-bind-html="news.content"></div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

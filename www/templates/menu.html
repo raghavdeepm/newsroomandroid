@@ -1,0 +1,54 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content drag-content="false">
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button></ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon menuButton" ng-click="toggleMenu()"></button>
+      </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+        <i class="icon ion-android-more-vertical"></i>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu class="sideMenu" on-swipe-left="toggleMenu()" ng-click="toggleMenu()">
+    <div class="menuBackground" ng-click="$event.stopPropagation()">
+      <ion-header-bar class="bar-stable headerLogo">
+        <img src="img/logo.jpg">
+      </ion-header-bar>
+      <ion-content class="menuContent">
+        <ion-list>
+          <ion-item href="#" ng-click="showSubMenu(); $event.preventDefault()" class="newsMenu">
+            <img src="img/inthenews.png">In The News<i class="icon ion-chevron-down"></i>
+          </ion-item>
+          <ul class="subMenu">
+            <li class="active" ng-click="toggleMenu()"><a href="#/app/newslist/topstories">Top Stories</a></li>
+            <li ng-click="toggleMenu()"><a href="#/app/newslist/featured">Most Read</a></li>
+          </ul>
+          <ion-item ng-click="toggleMenu()" href="#/app/newslist/watch">
+            <i class="watchIcon icon ion-ios-chatboxes-outline"></i>Watch
+          </ion-item>
+          <ion-item ng-click="toggleMenu()" href="#/app/newslist/crime">
+            <img src="img/crime.png">Crime
+          </ion-item>
+          <ion-item ng-click="toggleMenu()" href="#/app/newslist/politics">
+            <img src="img/politics.png" class="politics">Politics
+          </ion-item>
+          <ion-item ng-click="toggleMenu()" href="#/app/newslist/business">
+            <img src="img/business.png" class="business">Business
+          </ion-item>
+          <ion-item ng-click="toggleMenu()" href="#/app/newslist/entertainment">
+            <img src="img/entertainment.png">Entertainment
+          </ion-item>
+          <ion-item ng-click="toggleMenu()" href="#/app/newslist/sports">
+            <img src="img/sports.png" class="sports">Sports
+          </ion-item>
+          <ion-item ng-click="toggleMenu()" href="#/app/contactus">
+            <img src="img/contactus.png" class="contactus">Contact Us
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </div>
+  </ion-side-menu>
+</ion-side-menus>

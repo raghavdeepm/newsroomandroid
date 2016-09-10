@@ -1,0 +1,327 @@
+/* Empty. Add your own CSS if you like */
+
+@font-face {
+  font-family: 'Calibri';
+  src: url('../fonts/Calibri.eot?#iefix') format('embedded-opentype'), url('../fonts/Calibri.woff') format('woff'), url('../fonts/Calibri.ttf') format('truetype'), url('../fonts/Calibri.svg#Calibri') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Calibri-Bold';
+  src: url('../fonts/Calibri-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Calibri-Bold.woff') format('woff'), url('../fonts/Calibri-Bold.ttf') format('truetype'), url('../fonts/Calibri-Bold.svg#Calibri-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Calibri-Light';
+  src: url('../fonts/Calibri-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Calibri-Light.woff') format('woff'), url('../fonts/Calibri-Light.ttf') format('truetype'), url('../fonts/Calibri-Light.svg#Calibri-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Calibri-Italic';
+  src: url('../fonts/Calibri-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/Calibri-Italic.woff') format('woff'), url('../fonts/Calibri-Italic.ttf') format('truetype'), url('../fonts/Calibri-Italic.svg#Calibri-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Calibri-BoldItalic';
+  src: url('../fonts/Calibri-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/Calibri-BoldItalic.woff') format('woff'), url('../fonts/Calibri-BoldItalic.ttf') format('truetype'), url('../fonts/Calibri-BoldItalic.svg#Calibri-BoldItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TradeGothicLT-BoldCondTwenty';
+  src: url('../fonts/TradeGothicLT-BoldCondTwenty.eot?#iefix') format('embedded-opentype'), url('../fonts/TradeGothicLT-BoldCondTwenty.woff') format('woff'), url('../fonts/TradeGothicLT-BoldCondTwenty.ttf') format('truetype'), url('../fonts/TradeGothicLT-BoldCondTwenty.svg#TradeGothicLT-BoldCondTwenty') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'Calibri';
+}
+.bar.bar-stable.headerLogo {
+  height: auto;
+  border: 0px;
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+}
+.bar.bar-stable.headerLogo img {
+  width: auto;
+  height: 90px;
+  display: block;
+  margin: 15px auto;
+}
+.sideMenu {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  width: 100% !important;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.menuBackground {
+  display: none;
+  width: 80%;
+  height: 100%;
+  float: left;
+  background-color: #fff;
+}
+.menuContent .scroll {
+  transform: none !important;
+}
+.menuContent {
+  position: relative;
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.menuContent ion-item {
+  border: 0px;
+  margin: -1px 0px 0px;
+  padding: 0px;
+  font-size: 18px;
+  font-family: 'Calibri-Bold';
+}
+.menuContent ion-item a.item-content, .menuContent ion-item a.item-content.activated {
+  background-color: transparent !important;
+  border: none !important;
+  padding-right: 16px;
+}
+.menuContent ion-item.newsMenu.orange a.item-content, .icon.ion-ios-arrow-back, .icon.ion-android-arrow-back {
+  color: #ff3600;
+}
+.icon.ion-ios-arrow-back:before, .icon.ion-android-arrow-back:before {
+  font-size: 26px !important;
+  margin-top: -3px;
+  padding-left: 5px !important;
+}
+.menuContent ion-item img {
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin-right: 10px;
+  margin-top: -4px;
+}
+.subMenu {
+  float: left;
+  width: 100%;
+  margin-top: -10px;
+  position: relative;
+  z-index: 4;
+  display: none;
+}
+.subMenu li {
+  padding: 12px 28% 9px;
+  text-align: left;
+  font-family: 'Calibri';
+  background-color: #d2c7c4;
+  font-size: 18px;
+}
+.subMenu li a {
+  color: #000;
+  text-decoration: none;
+}
+.subMenu li.active {
+  background-color: #b2a19d;
+}
+.menuContent .icon {
+  float: right;
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+}
+.menuContent .icon.ion-chevron-up {
+  background-color: #ff3600;
+  padding-top: 3px;
+}
+.menuContent .icon.ion-chevron-down:before {
+  padding-top: 5px;
+}
+.bar-stable .button.button-icon.menuButton:before {
+  color: #ff3600;
+  font-size: 26px;
+  margin-top: -3px;
+}
+.bar.bar-stable .title {
+  font-family: 'TradeGothicLT-BoldCondTwenty';
+  margin-top: 0px;
+  font-size: 30px;
+  text-align: left;
+  margin-left: -8px;
+}
+.icon.ion-android-more-vertical:before {
+  font-size: 26px;
+  margin-top: 4px;
+  padding-right: 7px;
+}
+.newsListItem {
+  border: 0px;
+}
+.newsListItem.item {
+  padding: 10px 0px;
+}
+.newsListItem a, .newsListItem a.activated {
+  padding: 10px 0px !important;
+  background-color: transparent !important;
+}
+.newsListItem h2 {
+  padding: 0px 15px;
+  font-family: 'TradeGothicLT-BoldCondTwenty';
+  font-size: 24px;
+  color: #000;
+  font-weight: bold;
+  white-space: normal;
+}
+.newsListItem h3 {
+  padding: 0px 15px;
+  font-family: 'Calibri-Italic';
+  font-size: 18px;
+  color: #000;
+  white-space: normal;
+}
+.newsListItem div {
+  padding: 4px 15px 5px;
+  font-family: 'Calibri';
+  color: #000;
+  font-size: 16px;
+  white-space: normal;
+}
+.newsListItem p {
+  font-family: 'Calibri';
+  color: #000;
+  font-size: 16px;
+  white-space: normal;
+}
+.newsListItem img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0px auto;
+}
+.back-text {
+  display: none !important;
+}
+.contactUsContent {
+  padding: 20px 10px 0px;
+}
+.welcomeContactUs h3 {
+  color: #f2358e;
+}
+.contactUsContent h3 {
+  font-family: 'TradeGothicLT-BoldCondTwenty';
+  font-style: italic;
+  font-size: 24px;
+}
+.contactUsContent p, .contactUsContent p a {
+  font-family: 'Calibri';
+  font-size: 16px;
+  color: #524f50;
+  text-decoration: none;
+}
+.shareImg {
+  width: 18px;
+  height: auto;
+  display: block;
+  margin: 8px 10px 0px 0px;
+}
+.buttons-right.header-item {
+  display: block;
+}
+.bar-header {
+  padding: 8px 5px;
+}
+.showSideMenu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 100%;
+  z-index: 5;
+}
+.videogular-container {
+  width: 100%;
+  height: 320px;
+  margin: auto;
+  overflow: hidden;
+}
+.slider {
+  height: inherit;
+}
+.tourimages img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+.tourimages h1, .tourimages p, .tourimages p a {
+  text-decoration: none;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  top: 120px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'TradeGothicLT-BoldCondTwenty';
+}
+.tourimages h1 {
+  background-color: #000;
+  color: #fff;
+  font-size: 45px;
+  width: 220px;
+  padding: 5px 0px;
+  display: block;
+  margin: 0px auto;
+  font-weight: normal;
+}
+.tourimages p {
+  font-size: 27px;
+  line-height: 30px;
+}
+.tourimages p a {
+  text-transform: none;
+  width: 80%;
+  color: #fff;
+  font-size: 20px;
+  background-color: #fe3d00;
+  padding: 11px 0px;
+  margin: 0px auto;
+  font-family: 'Calibri';
+}
+.tourimages span, .tourimages span a {
+  text-decoration: none;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #f00;
+  font-size: 18px;
+  font-family: 'Calibri';
+}
+.slider-pager .slider-pager-page.active .icon.ion-record:before {
+  color: #fff !important;
+  border: none;
+  position: relative;
+  top: -1px;
+}
+.slider-pager .slider-pager-page .icon.ion-record:before {
+  color: transparent;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  width: 12px;
+  height: 12px;
+  position: relative;
+  top: 0px;
+}
+.menuContent .icon.watchIcon {
+  float: left;
+  background: none;
+  color: #000;
+  font-size: 30px;
+  margin-right: 10px;
+  margin-top: -4px;
+}
